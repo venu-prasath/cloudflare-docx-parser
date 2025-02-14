@@ -1,0 +1,31 @@
+{
+  "name": "cloudflare-docx-parser",
+  "version": "1.0.4",
+  "description": "A lightweight library to parse .docx files in Cloudflare Workers",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --minify --platform=browser --format=esm --outfile=dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "docx",
+    "parser",
+    "cloudflare",
+    "workers",
+    "typescript",
+    "text extraction",
+    "docx parser",
+    "cloudflare docx parser"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^4.5.1",
+    "fflate": "^0.8.2"
+  }
+}
