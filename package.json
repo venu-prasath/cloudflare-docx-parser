@@ -27,5 +27,13 @@
   "dependencies": {
     "fast-xml-parser": "^4.5.1",
     "fflate": "^0.8.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/venu-prasath/cloudflare-docx-parser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/venu-prasath/cloudflare-docx-parser/issues"
+  },
+  "homepage": "https://github.com/venu-prasath/cloudflare-docx-parser#readme"
 }
