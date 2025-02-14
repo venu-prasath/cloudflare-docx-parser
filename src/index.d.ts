@@ -1,0 +1,1 @@
+export function parseDocx(buffer: ArrayBuffer | Uint8Array): Promise<string>;

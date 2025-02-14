@@ -1,6 +1,11 @@
 import { unzipSync } from "fflate";
 import { XMLParser } from "fast-xml-parser";
 
+/**
+ * Parses a .docx file and returns the plain text content.
+ * @param buffer - The ArrayBuffer or Uint8Array representing the .docx file.
+ * @returns A promise that resolves to the plain text content of the .docx file.
+ */
 export async function parseDocx(buffer: ArrayBuffer | Uint8Array): Promise<string> {
     const uint8Array: Uint8Array = buffer instanceof Uint8Array ? buffer : new Uint8Array(buffer);
     const files = unzipSync(uint8Array) as Record<string, Uint8Array>;
